@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <?php require_once 'includes/conexion.php'; ?>
 <?php require_once 'includes/helpers.php'; ?>
 
@@ -53,5 +56,8 @@
          
 <?php require_once 'includes/footer.php'; ?>
 
+<?php
+ob_end_flush();
+?>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 if(isset($_POST)){
     require_once 'includes/conexion.php';
     $titulo= isset($_POST['titulo'])? mysqli_real_escape_string($db, $_POST['titulo']): false;
@@ -56,7 +56,7 @@ if(isset($_POST)){
     }
 }
 
-
+ob_end_flush();
 
 
 

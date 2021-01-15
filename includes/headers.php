@@ -1,8 +1,13 @@
+<?php
+ob_start();
+?>
+
 <?php require_once 'conexion.php'; ?>
 <?php require_once 'includes/helpers.php';?> 
 <!--una vez hacemos require de helpers o cualquier 
 otro archivo en headers tendremos disponibles las funciones 
 y variables de los mismos en todo el codigo-->
+
 
 
 <!DOCTYPE html>

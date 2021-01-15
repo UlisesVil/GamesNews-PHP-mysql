@@ -1,4 +1,5 @@
 <?php
+ob_start();
 //En este archivo no hacemos session_start por que ya lo hereda 
 
 function mostrarError($errores, $campo){
@@ -174,6 +175,6 @@ function conseguirComentario($conexion, $id){
     return $resultado;
 }
 
-
+ob_end_flush();
 
 ?>
