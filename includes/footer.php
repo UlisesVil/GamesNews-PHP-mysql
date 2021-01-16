@@ -1,15 +1,10 @@
+<div class="clearfix"></div>
 
-   
-   <div class="clearfix"></div> <!--este div es para que borre los flotados-->
-   
-   </div> <!--FIN CONTENEDOR-->
-   
-<!-- PIE DE PAGINA -->
+</div> <!--FIN CONTENEDOR-->
 
-   <footer id="pie">
-       <p>Desarrollado por Ulises Villa &copy; 2020</p>
-   </footer>
-
+<footer id="pie">
+    <p>Desarrollado por Ulises Villa &copy; 2020</p>
+</footer>
  
 <!--Scripts-->
 <script type="text/javascript" src="./assets/js/particles.js"></script>

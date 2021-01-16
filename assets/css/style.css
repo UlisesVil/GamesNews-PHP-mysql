@@ -69,6 +69,7 @@ body{
 
 
 .alerta{
+    width: fit-content;
     padding: 5px;
     font-size: 10px;
     font-family: PressStart2P;
@@ -247,6 +248,7 @@ body{
     text-shadow: 0px 0px 15px red;
     color: #cecece;
     font-family: "PressStart2P", Helvetica;
+    line-height: 20px;
 }
 
 .bloque h3:hover, 
@@ -388,6 +390,9 @@ text-align: center;
 background: transparent;
 border-color: #bd7d08;
 } 
+#verde{
+    padding-top: 9px;
+}
 .boton-verde{
 background: transparent;
 border-color: green;
