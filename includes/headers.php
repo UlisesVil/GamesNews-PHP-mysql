@@ -16,7 +16,7 @@
         <!--JQuery-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--Font Awesome-->
-        <script src="https://kit.fontawesome.com/a076d05399.js""></script>
+        <script src="https://kit.fontawesome.com/94235d9528.js"></script>
     </head>
 <body>
     
@@ -52,12 +52,12 @@
                         endwhile; 
                         endif;
                     ?>
-                <li>   
+                <!--<li>   
                     <a class="active" href="" >Sobre mi</a>
                 </li>
                 <li>   
                     <a class="active" href="" >Contacto</a>
-                </li>
+                </li>-->
             </ul>
         </nav>
         

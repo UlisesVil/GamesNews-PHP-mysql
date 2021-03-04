@@ -1,4 +1,6 @@
 <?php 
+    ob_start();
+    
     if(!isset($_POST['busqueda'])){
         header("Location: index.php");
     }
@@ -42,6 +44,9 @@
     
          
 <?php require_once 'includes/footer.php'; ?>
+<?php
+    ob_end_flush();
+?>
 
 </body>
 </html>
