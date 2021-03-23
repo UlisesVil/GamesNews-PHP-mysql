@@ -1,12 +1,16 @@
-<?php require_once 'includes/conexion.php'; ?>
+<?php 
+ob_start();
+require_once 'includes/conexion.php'; 
+?>
 <?php require_once 'includes/helpers.php'; ?>
 
-<?php 
+<?php
     $entrada_actual = conseguirEntrada($db, $_GET['id']); //En este caso usamos GET por que el id que necesitamos viene por la url de forma visible
      
     if(!isset($entrada_actual['id'])){
         header("Location: index.php");
     }
+ob_end_flush();
 ?>
 
 

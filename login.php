@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 //Iniciar la secion y la conexion a la base de datos
 require_once 'includes/conexion.php';
 
@@ -42,3 +42,4 @@ if(isset($_POST)){
 }
 //Redirigir al Index.php
 header('Location: index.php');
+ob_end_flush();

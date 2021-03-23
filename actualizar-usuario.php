@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 
 if(isset($_POST)){
     
@@ -97,3 +97,4 @@ if(isset($_POST)){
 }
 
  header('Location: mis-datos.php');
+ob_end_flush();

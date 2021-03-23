@@ -1,4 +1,5 @@
 <?php
+ob_start();
 if(isset($_POST)){
     
     //CONECCION A LA BASE DE DATOS
@@ -32,4 +33,4 @@ if(isset($_POST)){
 
 header('Location: index.php');
 
-?>
+ob_end_flush();

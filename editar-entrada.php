@@ -1,4 +1,6 @@
-<?php require_once 'includes/redireccion.php'; ?>
+<?php
+ob_start();
+require_once 'includes/redireccion.php'; ?>
 <?php require_once 'includes/conexion.php'; ?>
 <?php require_once 'includes/helpers.php'; ?>
 
@@ -10,6 +12,7 @@
     if(!isset($entrada_actual['id'])){
         header("Location: index.php");
     }
+ob_end_flush();
 ?>
 
 

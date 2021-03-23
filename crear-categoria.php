@@ -1,4 +1,6 @@
-<?php require_once 'includes/redireccion.php'; ?>
+<?php
+ob_start();
+require_once 'includes/redireccion.php'; ?>
 <?php require_once 'includes/headers.php'; ?>
 <?php require_once 'includes/lateral.php'; ?>
 
@@ -7,6 +9,7 @@
     if(isset($_SESSION['usuario']) && $_SESSION['usuario']['role']!=='admin'){
         header('Location: index.php');
     }
+ob_end_flush();
 ?>
 
 <!-- CAJA PRINCIPAL -->
