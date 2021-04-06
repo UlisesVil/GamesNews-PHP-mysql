@@ -3,7 +3,7 @@
 
 <footer id="footer">
    <div>
-      <span> Developed and designed by <a class="author" href="mailto:ulisesvil5@hotmail.com"> Ulises Villa </a> ©</span>
+      <span> Developed and designed by <a class="author" href="mailto:ulisesvil5@hotmail.com" title="E-mail Me"> Ulises Villa </a> ©</span>
          <script type="text/javascript">
             var d= new Date();
             document.write(d.getFullYear());

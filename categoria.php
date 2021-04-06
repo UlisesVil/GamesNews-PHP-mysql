@@ -19,9 +19,8 @@
     <h1><?=$categoria_actual['nombre']?> News</h1>
     <?php  
         $entradas = conseguirEntradas($db, null, $_GET['id'] );
-        //var_dump($entradas);
         if(!empty($entradas) && mysqli_num_rows($entradas) >= 1):
-            while($entrada = mysqli_fetch_assoc($entradas)):
+        while($entrada = mysqli_fetch_assoc($entradas)):
     ?>
         <article class="entrada">
            <!-- <?php var_dump($entrada);?> -->

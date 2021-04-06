@@ -9,7 +9,10 @@
         <link rel="icon" type="image/x-icon" href="icon.png">
         <title>Games News</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        
+        <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/forms-lateral-buttons.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/content.css">
+
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
         <script src="https://kit.fontawesome.com/94235d9528.js"></script>
     </head>
@@ -17,7 +20,7 @@
 
     <div id="particles-js"></div>
   
-    <header id="cabecera">
+    <header id="header">
         <div id="logo">
             <a href="index.php">Games News</a>
         </div>
@@ -51,14 +54,3 @@
        <div class="clearfix"></div>
     </header>
     <div id="contenedor">
-
-
-
-
-
-
-
-
-
-
-
