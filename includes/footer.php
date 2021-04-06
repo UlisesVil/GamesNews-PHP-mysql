@@ -1,16 +1,17 @@
+<div class="clearfix"></div>
+</div> <!--End Container-->
 
-   
-   <div class="clearfix"></div> <!--este div es para que borre los flotados-->
-   
-   </div> <!--FIN CONTENEDOR-->
-   
-<!-- PIE DE PAGINA -->
+<footer id="footer">
+   <div>
+      <span> Developed and designed by <a class="author" href="mailto:ulisesvil5@hotmail.com"> Ulises Villa </a> ©</span>
+         <script type="text/javascript">
+            var d= new Date();
+            document.write(d.getFullYear());
+         </script>
+      <span>. All rights reserved</span>
+   </div>
+</footer>
 
-   <footer id="pie">
-       <p>Developed by Ulises Villa &copy; 2020</p>
-   </footer>
-
- 
 <!--Scripts-->
 <script type="text/javascript" src="./assets/js/particles.js"></script>
 <script type="text/javascript" src="./assets/js/particlesapp.js"></script>

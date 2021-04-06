@@ -27,9 +27,6 @@ CONSTRAINT fk_entrada_usuario FOREIGN KEY(usuario_id) REFERENCES usuarios(id),
 CONSTRAINT fk_entrada_categoria FOREIGN KEY(categoria_id) REFERENCES categorias(id) ON DELETE NO ACTION
 )ENGINE=InnoDb;
 
-
-
-
 CREATE TABLE IF NOT EXISTS comments(
 id                  int(255) auto_increment not null,
 usuario_id          int(255) not null,

@@ -204,7 +204,7 @@ body{
 /*    min-height: auto;*/
     margin:0px auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 120px;
     /*border: 1px solid blue;*/
 }
 
@@ -267,6 +267,7 @@ body{
     float: right;
     position: relative;
     top: -5px;
+    cursor: pointer;
 }
 .fa-search,
 .fa-clipboard,
@@ -531,18 +532,24 @@ border-color: red;
 
 /*PIE DE PAGINA*/
 
-#pie{
+#footer{
     clear: both;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     bottom: 0;
     width: 100%;
-    margin: 193px auto 0px;
-    background: rgba(0,0,0,1);
+    background: rgba(0,0,0,.8);
     color: #666;
-    padding: 10px;
+    padding: 10px 20px 10px 0px;
+    box-sizing: border-box;
     text-align: left;
     z-index: 2;
     font-size: 14px;
+}
+#footer a{
+    color:yellowgreen;
 }
 
 

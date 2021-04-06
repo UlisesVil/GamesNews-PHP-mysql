@@ -1,41 +1,30 @@
 <?php
 ob_start();
-require_once 'includes/redireccion.php'; ?>
+require_once 'includes/redireccion.php';
+?>
 <?php require_once 'includes/headers.php'; ?>
 <?php require_once 'includes/lateral.php'; ?>
-
 <?php 
-
     if(isset($_SESSION['usuario']) && $_SESSION['usuario']['role']!=='admin'){
         header('Location: index.php');
     }
-ob_end_flush();
+    ob_end_flush();
 ?>
 
-<!-- CAJA PRINCIPAL -->
 <div id="principal">
     <h1>Crear Categorias</h1>
-    
     <p>
-        Añade nuevas categorias al blog para que los usuarios 
-        puedan usarlas al crear sus entradas.
+        Add new categories to the blog.
     </p>
     <br/>
-    
     <form class="newEntry" action="guardar-categoria.php" method="POST">
-        <label for="nombre">Nombre de la categoria</label>
+        <label for="nombre">Category Name</label>
         <input type="text" name="nombre" />
         
-        <input type="submit" value="Guardar" />
-        
+        <input type="submit" value="Save" />
     </form>
-    
-    
-</div>  <!--FIN PRINCIPAL-->
-    
-         
+</div>   
 <?php require_once 'includes/footer.php'; ?>
-
 </body>
 </html>
 

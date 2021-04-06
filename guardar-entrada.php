@@ -6,46 +6,28 @@ if(isset($_POST)){
     $descripcion= isset($_POST['descripcion'])? mysqli_real_escape_string($db, $_POST['descripcion']): false;
     $categoria= isset($_POST['categoria'])? (int)$_POST['categoria'] : false;
     $usuario= (int)$_SESSION['usuario']['id'];
-         //var_dump($usuario);
-        //die();
-        
-    //Validacion
     $errores=array();
     
     if(empty($titulo)){
-        $errores['titulo']='El titulo no es valido';
+        $errores['titulo']='The title is not valid';
     }
     if(empty($descripcion)){
-        $errores['descripcion']='La descripcion no es valida';
+        $errores['descripcion']='The description is not valid';
     }
     if(empty($categoria) && !is_numeric($categoria)){
-        $errores['categoria']='La categoria no es valida';
+        $errores['categoria']='The category is not valid';
     }
-    
     if(count($errores) == 0){
         if(isset($_GET['editar'])){
             $entrada_id=$_GET['editar'];
             $usuario_id= $_SESSION['usuario']['id'];
-            
-            var_dump($titulo);
-            var_dump($descripcion);
-            var_dump($categoria);
-            var_dump($entrada_id);
-            var_dump($usuario_id);
-            //die();
             $sql = "UPDATE entradas SET titulo='$titulo', descripcion='$descripcion', categoria_id=$categoria
                     WHERE id = $entrada_id";
-            var_dump($sql);
-            //die();
         }else{
             $sql = "INSERT INTO entradas VALUES (null, $usuario, $categoria, '$titulo', '$descripcion',CURDATE());";
-
         }
         $guardar = mysqli_query($db, $sql);
         header("Location: entrada.php?id=$entrada_id");
-        var_dump(mysqli_error($db));
-        //die();
-        
     }else{
         $_SESSION["errores_entrada"] = $errores;
         if(isset($_GET['editar'])){
@@ -55,5 +37,4 @@ if(isset($_POST)){
         }
     }
 }
-
 ob_end_flush();
