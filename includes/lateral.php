@@ -51,7 +51,7 @@
                 <?php var_dump($_SESSION['errores']); ?>
             <?php endif; ?>
             <i id="registerClose" class="fas fa-times"></i>
-            <h3>Register<i class="far fa-clipboard"></i></h3>
+            <h3>Sign Up<i class="far fa-clipboard"></i></h3>
 
             <?php if(isset($_SESSION['completado'])): ?>
                 <div class="alerta alerta-exito">     
@@ -84,6 +84,6 @@
             </form>
             <?php borrarErrores(); ?>  
         </div>
-        <h3 id="registerbtn" class="h3bloq showmenu">Register<i class="far fa-clipboard"></i></h3>
+        <h3 id="registerbtn" class="h3bloq showmenu">Sign Up<i class="far fa-clipboard"></i></h3>
     <?php endif; ?>
 </aside>

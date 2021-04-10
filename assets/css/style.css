@@ -55,13 +55,13 @@ body{
 }
 
 .alerta{
-    padding: 5px;
     font-size: 10px;
     font-family: PressStart2P;
     color: white;
     background: rgba(0,0,0,.8);
     box-shadow: 0px 1px 3px #ccc;
     border-radius: 5px;
+    padding: 5px;
     margin-top: 30px;
 }
 
@@ -77,13 +77,13 @@ body{
 }
 
 #footer{
-    clear: both;
     position: fixed;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: flex-end;
     bottom: 0;
-    width: 100%;
+    clear: both;
     background: rgba(0,0,0,.8);
     color: #666;
     padding: 10px 20px 10px 0px;
@@ -95,6 +95,34 @@ body{
 
 #footer a{
     color:yellowgreen;
+}
+
+/*ScrollBar*/
+::-webkit-scrollbar-corner {
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: #2c2b2b;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #990202;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 10px;
+    background: red;
+    border-radius: 20px;
 }
 
 @media (max-width: 952px){
@@ -143,6 +171,11 @@ body{
 }
 
 @media (max-width: 858px){
+    header{
+        position: fixed;
+        background: black !important;
+        z-index: 3;
+    }
     
     .checkbtn{
         display: block; 
@@ -182,5 +215,11 @@ body{
     
     #check:checked ~ ul{
         left: 0;
+    }
+    
+    #footer{
+        justify-content: flex-start;
+        font-size: 13px;
+        padding: 5px 0px 5px 10px;
     }
 }

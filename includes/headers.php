@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="icon.png">
         <title>Games News</title>
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/forms-lateral-buttons.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/content.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
         <script src="https://kit.fontawesome.com/94235d9528.js"></script>

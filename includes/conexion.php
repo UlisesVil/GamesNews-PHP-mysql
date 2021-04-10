@@ -1,16 +1,10 @@
 <?php
-	$servidor = 'localhost';
-	$usuario= 'root';
-	$password= '';
-	$basededatos= 'blog_master';
-	$db = mysqli_connect($servidor, $usuario, $password, $basededatos);
 
-	/*
-	$servidor = '**Data Server**';
-	$usuario= '**Data Server**';
-	$password= '**Data Server**';
-	$basededatos= '**Data Server**';
-	*/
+	$servidor = '**DB secret Data Host**';
+	$usuario= '**DB secret Data Host**';
+	$password= '**DB secret Data Host**';
+	$basededatos= '**DB secret Data Host**';
+	
 	$db = mysqli_connect($servidor, $usuario, $password, $basededatos);
 	mysqli_query($db, "SET NAMES 'utf8'");
 
